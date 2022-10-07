@@ -1,0 +1,12 @@
+spring:
+  # ??????????
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+minio:
+  endpoint: http://81.70.13.188:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucketName: cugsdn
+
