@@ -96,8 +96,9 @@ public class MinioUtilS {
         for (MultipartFile file : multipartFile) {
             String fileName = file.getOriginalFilename();
             String[] split = fileName.split("\\.");
+            int size=split.length;
             if (split.length > 1) {
-                fileName = split[0] + "_" + System.currentTimeMillis() + "." + split[1];
+                fileName = split[0] + "_" + System.currentTimeMillis() + "." + split[size-1];
             } else {
                 fileName = fileName + System.currentTimeMillis();
             }

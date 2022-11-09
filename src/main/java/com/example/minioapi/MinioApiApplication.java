@@ -14,6 +14,7 @@ public class MinioApiApplication {
         app.setDefaultProperties(Collections
                 .singletonMap("server.port", "8083"));
         app.run(args);
+        System.out.println("hello");
     }
 
 }
